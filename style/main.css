@@ -1,0 +1,18 @@
+@import 'reset.css';
+@import 'header.css';
+@import 'modal-window.css';
+@import 'visit-card.css';
+@import 'filter.css';
+@import 'visit-modal.css';
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    transition: 0.3s;
+}
+
+.invisible {
+    display: none !important;
+}

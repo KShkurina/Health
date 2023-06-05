@@ -1,0 +1,176 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 4px;
+    position: relative;
+
+}
+
+.header__logo-img {
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.header__logo-title {
+    display: none;
+}
+
+.header__logo-title-mobile {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.header__nav {
+    display: none;
+    align-items: flex-start;
+    background: rgba(49, 49, 49, 0.9);
+    top: 107px;
+    left: 10px;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.header__nav--active {
+    display: flex;
+}
+
+.header__nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.header__nav-link {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.header__nav-link:hover {
+    color: #14B9D5;
+}
+
+.header__visit-wrapper {
+    display: flex;
+}
+
+.header__addCard, .header__logout, .header__login {
+    display: flex;
+    align-items: center;
+    width: 95px;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    background: #4d4c4c;
+    cursor: pointer;
+}
+
+.header__visit-wrapper > button:hover {
+    background: #363535;
+}
+
+.header__login-wrapper > button:hover {
+    background: #363535;
+}
+
+.header__btn-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 3px;
+}
+
+@media (min-width: 758px) {
+    .header__logo {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .header__logo-img {
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .header__logo-title {
+        display: flex;
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+
+    .header__logo-title-mobile {
+        display: none;
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        top: 0;
+        left: 0;
+        position: relative;
+        flex-direction: row;
+    }
+
+    .header__nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .header__nav-link {
+        color: #FFFFFF;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__logo-img {
+        margin: 10px;
+        padding: 0;
+        width: 72px;
+        height: 72px;
+    }
+
+    .header__logo-title {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    .header__nav-link {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .header__addCard, .header__logout, .header__login {
+        min-width: 110px;
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .header__btn-img {
+        margin-right: 5px;
+    }
+}

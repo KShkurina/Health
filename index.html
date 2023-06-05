@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="shortcut icon" href="./img/hospital.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#">
+      <div class="header__logo">
+        <img class="header__logo-img" src="./img/hospital.png" alt="logo">
+        <h3 class="header__logo-title">Our Hospital</h3>
+        <p class="header__logo-title-mobile">Menu</p>
+      </div>
+    </a>
+    <ul class="header__nav">
+      <li class="header__nav-item"><a class="header__nav-link" href="#">services</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="#">doctors</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="#">news</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="#">coronavirus test</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="#">contacts</a></li>
+    </ul>
+
+    <div class="header__login-wrapper">
+      <button class="header__login" href="#">
+        <img class="header__btn-img" src="./img/user.png" alt="login">login
+      </button>
+    </div>
+
+    <div class="header__visit-wrapper invisible">
+      <button class="header__addCard" href="#">
+        <img class="header__btn-img" src="./img/add.patient.png" alt="add new visit">new visit
+      </button>
+      <button class="header__logout" href="#">
+        <img class="header__btn-img" src="./img/exit.png" alt="logout">logout 
+      </button>
+    </div>
+  </header>
+
+  <div class="filter">
+    <div class="filter__status">
+      <select name="status" id="filter__status" class="filter__status-value">
+        <option value="*">Любой статус</option>
+        <option value="1">Завершен</option>
+        <option value="0">Назначен</option>
+      </select>
+    </div>
+    <div class="filter__priority">
+      <select name="priority" id="filter__priority" class="filter__priority-value">
+        <option selected value="">Любая срочность</option>
+        <option value="high">Срочный</option>
+        <option value="normal">Обычный</option>
+        <option value="low">Низкий</option>
+      </select>
+    </div>
+    <div class="filter__description">
+      <input type="text" class="description__input" placeholder="поиск по содержимому">
+    </div>
+  </div>
+
+  <div class="header__visit-wrapper invisible">
+    <button class="header__addCard" href="#">
+      <img class="header__btn-img" src="./img/add.patient.png" alt="add new visit">new visit
+    </button>
+    <button class="header__logout" href="#">
+      <img class="header__btn-img" src="./img/exit.png" alt="logout">logout
+    </button>
+  </div>
+
+</header>
+
+  <div class="cards-box">
+    <div class="no-items">Нет карточек для отображения</div>
+  </div>
+
+
+  <script src="./script/index.js" type="module"></script>
+  </body>
+
+</html>

@@ -1,0 +1,31 @@
+.doctor {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  min-width: 250px;
+}
+
+.doctor-input {
+  min-width: 200px;
+  padding: 7px;
+  margin: 5px;
+  background: rgb(243, 243, 243, 0.3);
+  border: #4d4c4c solid 1px;
+  border-radius: 5px;
+}
+
+
+.doctor-input:focus{
+ outline:  rgb(61, 61, 61) solid 1px;   
+}
+
+@media (min-width: 758px) {
+  .doctor {
+      min-width: 350px;
+  }
+
+  .doctorInput {
+      min-width: 300px;
+      padding: 10px;
+  }
+}

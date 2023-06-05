@@ -1,0 +1,57 @@
+.doctors__title {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin: 15px 40px;
+}
+
+.doctors__list {
+    font-size: 15px;
+    display: flex;
+    min-width: 200px;
+    min-height: 30px;
+    padding: 5px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    border: solid 1px #706868;
+}
+
+.doctor__input {
+    display: block;
+    min-width: 200px;
+    padding: 7px;
+    margin: 10px;
+    background: rgb(243, 243, 243, 0.3);
+    border: #4d4c4c solid 1px;
+    border-radius: 5px;
+}
+
+.doctor__input:focus{
+    outline:  rgb(61, 61, 61) solid 1px;
+}
+
+.doctor-box {
+    display: flex;
+    justify-content: center;
+}
+
+.doctor__urgency > p {
+    margin: 20px 0 6px 7px;
+}
+
+@media (min-width: 758px) {
+    .doctors__title {
+        font-size: 30px;
+        margin: 30px 130px 15px;
+    }
+
+    .doctors__list {
+        font-size: 20px;
+        min-width: 250px;
+    }
+
+    .doctor__input {
+        min-width: 300px;
+    }
+}
